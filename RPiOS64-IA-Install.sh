@@ -53,11 +53,7 @@ fi
 
 #### GET USER INPUTS #### HOSTNAME ######################################################################################################
 read -p "Enter new hostname e.g. RPi4-01-PVE : " HOSTNAME
-while [[ ! "$HOSTNAME" =~ ^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$  ]]
- do
-  printf " --->$RED $HOSTNAME $NORMAL<--- Is NOT an valid HOSTNAME, try again...\n"
-  read -p "Enter new hostname e.g.: RPi4-01-PVE  : " HOSTNAME
-done
+
 
 #### IP AND NETMASK ! ###################################################################################################################
 read -p "Enter new static IP and NETMASK e.g. 192.168.0.100/24 : " RPI_IP
